@@ -18,8 +18,6 @@ you may do so by following the instructions below.
 
 ```bash
 $ pip install -r requirements.txt
-# Run local server
-$ python run.py
 # Build static content
 $ python freeze.py
 ```
