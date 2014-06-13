@@ -11,14 +11,14 @@ tags: chat,messaging,XMPP,OTR
 
 
 # Intro
-Cryptocat is a browser-based instant messaging program that offers client size
+Cryptocat is a browser-based instant messaging program that offers client side
 encryption. The client is loaded locally as a browser plugin for Google Chrome
 or Mozilla Firefox, and communicates to an XMPP-BOSH sever over HTTPS. Cryptocat
 runs on the OTR (Off the Record) protocol for two-party encryption conversations
 and the mpOTR for multi-party encrypted conversations.
 
 # Trusted Parties
-Since this is a browser extension the code runs locally on each computer. The
+Since this is a browser plugin the code runs locally on each computer. The
 trusted parties would include each user that's using the pluglin. You also need
 to assume that your browser isn't compromised or that you don't have any
 malicious plugins installed alongside of Cryptocat. You must also trust the OTR
