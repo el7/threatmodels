@@ -22,8 +22,7 @@ Since this is a browser plugin the code runs locally on each computer. The
 trusted parties would include each user that's using the pluglin. You also need
 to assume that your browser isn't compromised or that you don't have any
 malicious plugins installed alongside of Cryptocat. You must also trust the OTR
-and mpOTR protocols. You also need to trust the BOSH server and XMPP server that
-revieves the messages before relaying them to the recipients.
+and mpOTR protocols.
 
 # Untrusted Parties
 User messages are encrypted before they are sent from your browser, thus not
