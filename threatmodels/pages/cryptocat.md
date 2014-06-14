@@ -19,7 +19,7 @@ and the mpOTR for multi-party encrypted conversations.
 
 # Trusted Parties
 Since this is a browser plugin the code runs locally on each computer. The
-trusted parties would include each user that's using the pluglin. You also need
+trusted parties would include each user that's using the plugin. You also need
 to assume that your browser isn't compromised or that you don't have any
 malicious plugins installed alongside of Cryptocat. You must also trust the OTR
 and mpOTR protocols.
@@ -29,24 +29,30 @@ User messages are encrypted before they are sent from your browser, thus not
 needing to trust a specific website. 
 
 # Key Storage
-The browser plugin generates (mp/OTR) key pairs, encrypts, sends, recieves and
-decrypts messages, sends and recieves [mp]OTR public keys, and calculats the
+The browser plugin generates (mp/OTR) key pairs, encrypts, sends, receives and
+decrypts messages, sends and receives [mp]OTR public keys, and calculates the
 public key footprints. 
 
 # Convenience
 Cryptocat offers encrypted messaging directly from a browser plugin. This is a
-convinient method of comminication over the Off The Record protocol, but doesn't
-serve much purpose when there isn't a network connection availible. It's also
+convenient method of communication over the Off The Record protocol, but doesn't
+serve much purpose when there isn't a network connection available. It's also
 impossible to disable OTR as unencrypted messages are rejected by the server. 
 
 # Authentication
-The system uses a challenge repsonse for the Cryptocat OTR key in order to prove
-that Cryptocat owns the private key to the offered public key. If answered
-successfully, the XMPP server offers an identity to the user based on their
-public key. 
+A chat room visitor provides the Cryptocat service with a room name and
+nickname. Cryptocat then generates an OTR key pair (public and private), and
+then generates an XMPP username and password. These are used to register a new
+user on the server. The visitor then sends their public OTR key to the XMPP
+server, which returns a challenge to the Cryptocat OTR key in order to prove
+that Cryptocat owns the private key to the offered public key. If the challenge
+is successful, the XMPP server assigns an XMPP identity to the user based on
+their public key. An mpOTR key exchange then occurs between the users, which is
+where their username is exchanged, never seen by the XMPP server.
+
 
 # Architecture
-The two systems include the client systems (at least two seperate parties) and
+The two systems include the client systems (at least two separate parties) and
 the relay systems (the XMPP and BOSH servers), making this a federated
 architecture. 
 

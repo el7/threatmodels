@@ -1,9 +1,9 @@
-#Title: Tahoe-LAFS
+Title: Tahoe-LAFS
 Application: Tahoe-LAFS
 date: 2014-06-13
 Trusted Parties: User's system
-Untrusted Parties: Tahoe-LAFS servers, privledged users
-Key Storage: Doesn't use keys
+Untrusted Parties: Tahoe-LAFS servers, privileged users
+Key Storage: Local by client
 Convenience: Medium
 Authentication: 
 Architecture: P2P
@@ -12,8 +12,8 @@ tags: cloud,storage,file,hosting
 # Intro
 Tahoe-LAFS (The Least-Authority File System) is a cloud based storage solution
 that operates similarly to BitTorrent, in that it distributes your storage over
-several (7 default) servers.  This keeps your data avaiable in case some of the
-servers were to go down ot be compromised. The files are also erasure-coded,
+several (7 default) servers.  This keeps your data available in case some of the
+servers were to go down or be compromised. The files are also erasure-coded,
 which is a form of bit recovery.
 
 # Trusted Parties: 
@@ -30,18 +30,17 @@ individuals to have read or read/write access, who can also grant read or
 read/write access to others. 
 
 # Key Storage:
-The authenitication is done by the gateway and the user never handles keys. The
+The authentication is done by the gateway and the user never handles keys. The
 gateway communicates with the hosting servers, giving the clients freedom of
-convinience. 
-
+convenience. 
 
 # Convenience:
 Since the customer doesn't have to deal with keys they are free from needing to
-keep track of extra meticulous things, giving extra convinience to it's
+keep track of extra meticulous things, giving extra convenience to it's
 customers. 
 
 # Authentication:
-Unsure how authenication works ...
+
 
 # Architecture:
 The user's files are broken up and stored on several distributed servers, using
