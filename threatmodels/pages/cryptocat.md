@@ -7,7 +7,7 @@ Key Storage: Local
 Convenience: Medium
 Authentication: Challenge request Auth
 Architecture: Federated
-tags: chat,messaging,XMPP,OTR
+tags: [chat,messaging,XMPP,OTR]
 
 
 # Intro

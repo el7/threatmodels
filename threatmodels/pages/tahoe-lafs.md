@@ -7,7 +7,7 @@ Key Storage: Local by client
 Convenience: Medium
 Authentication: 
 Architecture: Silo
-tags: cloud,storage,file,hosting
+tags: [cloud,storage,file,hosting]
 
 # Intro
 Tahoe-LAFS (The Least-Authority File System) is a cloud based storage solution

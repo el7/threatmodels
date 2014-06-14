@@ -7,7 +7,7 @@ Key Storage: Local
 Convenience: Medium 
 Authentication: HMAC-SHA256 
 Architecture: Silo 
-tags: cloud,storage,backup
+tags: [cloud,storage,backup]
 
 # Intro
 Tarsnap is a cloud-based file backup host that considers itself very secure.
