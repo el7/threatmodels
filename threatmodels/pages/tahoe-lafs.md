@@ -40,8 +40,7 @@ convenient for casual users, or very convenient for power users.
 
 # Authentication:
 The authentication is done by the gateway and the user never handles keys. The
-gateway communicates with the hosting servers, giving the clients freedom of
-convenience. 
+gateway communicates with the hosting servers.
 
 # Architecture:
 The architecture for Tahoe-LAFS is federated as anyone can host their own
