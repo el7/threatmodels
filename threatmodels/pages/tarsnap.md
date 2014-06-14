@@ -55,6 +55,6 @@ by the client in order to gain access to the remote data.
 
 # Architecture
 Tarsnap uses Amazon S3 storage servers which uses a cloud service to offer
-clients access to their files from virtually anywhere.
-
+clients access to their files from virtually anywhere. The servers would be
+considered a single hub, as a silo architecture. 
 

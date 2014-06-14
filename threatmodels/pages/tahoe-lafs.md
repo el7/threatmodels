@@ -6,7 +6,7 @@ Untrusted Parties: Tahoe-LAFS servers, privileged users
 Key Storage: Local by client
 Convenience: Medium
 Authentication: 
-Architecture: P2P
+Architecture: Silo
 tags: cloud,storage,file,hosting
 
 # Intro
@@ -30,19 +30,20 @@ individuals to have read or read/write access, who can also grant read or
 read/write access to others. 
 
 # Key Storage:
-The authentication is done by the gateway and the user never handles keys. The
-gateway communicates with the hosting servers, giving the clients freedom of
-convenience. 
+Keys are stores on the user's system.
 
 # Convenience:
 Since the customer doesn't have to deal with keys they are free from needing to
 keep track of extra meticulous things, giving extra convenience to it's
-customers. 
+customers. The program uses a CLI to interact with the files, making it not very
+convenient for casual users, or very convenient for power users.
 
 # Authentication:
-
+The authentication is done by the gateway and the user never handles keys. The
+gateway communicates with the hosting servers, giving the clients freedom of
+convenience. 
 
 # Architecture:
-The user's files are broken up and stored on several distributed servers, using
-a P2P structure between each server.
+The architecture for Tahoe-LAFS is federated as anyone can host their own
+storage servers if they'd like.
 

@@ -12,16 +12,16 @@ tags: chat,messaging,XMPP,OTR
 
 # Intro
 Cryptocat is a browser-based instant messaging program that offers client side
-encryption. The client is loaded locally as a browser plugin for Google Chrome
+encryption. The client is loaded locally as a browser extension for Google Chrome
 or Mozilla Firefox, and communicates to an XMPP-BOSH sever over HTTPS. Cryptocat
 runs on the OTR (Off the Record) protocol for two-party encryption conversations
 and the mpOTR for multi-party encrypted conversations.
 
 # Trusted Parties
-Since this is a browser plugin the code runs locally on each computer. The
-trusted parties would include each user that's using the plugin. You also need
+Since this is a browser extension the code runs locally on each computer. The
+trusted parties would include each user that's using the extension. You also need
 to assume that your browser isn't compromised or that you don't have any
-malicious plugins installed alongside of Cryptocat. You must also trust the OTR
+malicious extensions installed alongside of Cryptocat. You must also trust the OTR
 and mpOTR protocols.
 
 # Untrusted Parties
@@ -29,12 +29,12 @@ User messages are encrypted before they are sent from your browser, thus not
 needing to trust a specific website. 
 
 # Key Storage
-The browser plugin generates (mp/OTR) key pairs, encrypts, sends, receives and
+The browser extension generates (mp/OTR) key pairs, encrypts, sends, receives and
 decrypts messages, sends and receives [mp]OTR public keys, and calculates the
 public key footprints. 
 
 # Convenience
-Cryptocat offers encrypted messaging directly from a browser plugin. This is a
+Cryptocat offers encrypted messaging directly from a browser extension. This is a
 convenient method of communication over the Off The Record protocol, but doesn't
 serve much purpose when there isn't a network connection available. It's also
 impossible to disable OTR as unencrypted messages are rejected by the server. 
@@ -54,6 +54,5 @@ where their username is exchanged, never seen by the XMPP server.
 # Architecture
 The two systems include the client systems (at least two separate parties) and
 the relay systems (the XMPP and BOSH servers), making this a federated
-architecture. 
-
+architecture.
 
